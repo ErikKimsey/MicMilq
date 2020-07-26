@@ -40,7 +40,6 @@ public class MicCheck : MonoBehaviour
         mic.clip = Microphone.Start(Microphone.devices[1].ToString(), true, 1, AudioSettings.outputSampleRate);
         mic.loop = true;
         clip = mic.clip;
-        // while(!(Microphone.GetPosition(null) > 0)){}
         mic.Play();
         GetSampleData();
     }
